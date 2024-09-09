@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {TodoContext} from "../Context/Cotext"
 function Input() {
     const [todoMssg,setTodoMssg]=useState("")
-    const {addTodo} = TodoContext()
+    const {addTodo} = TodoContext() 
     const add =()=>{
         if(todoMssg==="") return
         addTodo({todo:todoMssg,checked : false})
